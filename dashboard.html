@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>InternSync Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-page">
+  <header>
+    <h1>InternSync Dashboard</h1>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <h2>Enter Your Task Details</h2>
+      <input type="text" id="week" placeholder="Week #" />
+      <input type="text" id="task" placeholder="Task Details" />
+      <input type="text" id="skills" placeholder="Skills Used (comma-separated)" />
+      <button onclick="saveEntry()">Save Entry</button>
+    </section>
+
+    <section class="timeline-section">
+      <h2>Internship Timeline</h2>
+      <input type="text" id="filter" placeholder="Filter by Skill" oninput="filterSkills()" />
+      <div id="timeline"></div>
+    </section>
+
+    <div class="export-buttons">
+      <button onclick="exportToPDF()">Export to PDF</button>
+      <button onclick="exportToMarkdown()">Export to Markdown</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>InternSync Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-page">
+  <div class="login-container">
+    <div class="login-left">
+      <h1>Welcome Back .!</h1>
+      <p class="skip-lag"> <span>Skip the lag ?</span> </p>
+    </div>
+    <div class="login-card">
+      <h2>Login</h2>
+      <p class="subtext">Glad you're back.!</p>
+      <input type="text" id="username" placeholder="Username" />
+      <input type="password" id="password" placeholder="Password" />
+      <label><input type="checkbox"> Remember me</label>
+      <button onclick="validateLogin()">Login</button>
+      <p><a href="#">Forgot password?</a></p>
+      <div class="social-login">
+        <span>Or</span>
+        <div class="icons">
+          <img src="https://cdn-icons-png.flaticon.com/128/300/300221.png" alt="Google">
+          <img src="https://cdn-icons-png.flaticon.com/128/733/733547.png" alt="Facebook">
+          <img src="https://cdn-icons-png.flaticon.com/128/733/733553.png" alt="GitHub">
+        </div>
+      </div>
+      <p class="signup">Don’t have an account? <a href="#">Signup</a></p>
+    </div>
+  </div>
+
+  <!-- Welcome Popup -->
+  <div id="popup" class="popup">
+    <h2>Welcome, Intern!</h2>
+    <p>You're one step closer to mastering your internship journey 🚀</p>
+    <button onclick="redirectToDashboard()">Continue</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+s
